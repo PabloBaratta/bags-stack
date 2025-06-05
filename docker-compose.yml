@@ -13,6 +13,7 @@ services:
 
   api:
     container_name: bags-api
+    mem_limit: 512m
     image: "ghcr.io/abramowichana/bags:${API_VERSION}"
     env_file:
       - .env
